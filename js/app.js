@@ -12,15 +12,17 @@
 
   $("#new-restaurant-form").submit(function (event) {
     event.preventDefault();
-    var details = $(this).serializeArray();
+    var form = $(this);
+    var details = form.serializeArray();
     var argument = {};
+    var restaurant = new Restaurant(argument);
     $(details).each(function() {
       argument[this.name] = this.value;
     })
-    var restaurant = new Restaurant(argument);
     restaurant.save({
       success: function (resaurant) {
-        alert("Saved restaurant with id " + restaurant.getId());
+        alert("Saved restaurant!");
+        form[0].reset();
       },
       error: function (error) {
         alert("Unable to save restaurt due to " + error);
