@@ -5,30 +5,10 @@
     'appSecret': '2128bcc817fd4ce0acb9da7d9c398c00'
   });
 
-  var Restaurant = Kinvey.Entity.extend({
-    // Overwrite the constructor to automatically link all instances to the restaurants collection.
-    constructor: function(attributes) {
-        Kinvey.Entity.prototype.constructor.call(this, attributes, 'restaurants');
-    },
-    getName: function() {
-        return this.get('name');
-    },
-    getDate: function() {
-        return this.get('date');
-    },
-    getAttendees: function() {
-        return this.get('attendees');
-    },
-    getLocation: function() {
-      return this.get('location');
-    },
-    getRating: function() {
-      return this.get('rating');
-    },
-    getNotes: function() {
-      return this.get('notes');
-    }
-});
+  var Restaurant = {};
+  require(["js/entities/Restaurant"], function(_Restaurant){
+    Restaurant = _Restaurant;
+  });
 
   $("#new-restaurant-form").submit(function (event) {
     event.preventDefault();
