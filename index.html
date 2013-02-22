@@ -3,35 +3,40 @@
   <head>
     <title>Louis W. Sivillo</title>
     <!-- Bootstrap -->
-    <link href="images/favicon.ico" rel="shortcut icon">
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300italic,300,400italic,700,900italic,900,700italic' rel='stylesheet' type='text/css'>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
   </head>
   <body>
     
-    <form id="new-restaurant-form">
-      <fieldset>
-        <legend>Add Restaurant</legend>
-        <label>Restaurant Name</label>
-        <input type="text" name="name" placeholder="Savinos">
-        <label>Date Visited</label>
-        <input type="text" name="date" placeholder="February 14, 2013">
-        <label>Attendees</label>
-        <input type="text" name="attendees" placeholder="Louis, Patience">
-        <label>Location</label>
-        <input type="text" name="location" placeholder="Boston - Atlanic Wharf">
-        <label>Rating</label>
-        <input type="text" name="rating" placeholder="1-5">
-        <label>Special Notes</label>
-        <textarea name="notes" placeholder="Enter special notes here"></textarea>
-<!--         <span class="help-block">Example block-level help text here.</span>
-        <label class="checkbox">
-          <input type="checkbox"> Check me out
-        </label> -->
-        <button type="submit" class="btn">Add Restaurant</button>
-      </fieldset>
-    </form>
+    <div>
+      <button id="addRestaurant" type="button">Add New Restaurant</button>
+    <div>
+
+    <div id="addRestaurantModal" class="workModal modal hide fade" tabindex="-1" role="dialog">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3 id="myModalLabel">Add Restaurant</h3>
+      </div>
+        <div class="modal-body">
+          <form id="new-restaurant-form">
+            <fieldset>
+              <label>Restaurant Name</label>
+              <input type="text" name="name" placeholder="Savinos">
+              <label>Date Visited</label>
+              <input type="text" name="date" placeholder="February 14, 2013">
+              <label>Attendees</label>
+              <input type="text" name="attendees" placeholder="Louis, Patience">
+              <label>Location</label>
+              <input type="text" name="location" placeholder="Boston - Atlanic Wharf">
+              <label>Rating</label>
+              <input type="text" name="rating" placeholder="1-5">
+              <label>Special Notes</label>
+              <textarea name="notes" placeholder="Enter special notes here"></textarea>
+              <button type="submit" class="btn">Add</button>
+            </fieldset>
+          </form>  
+        </div>
+    </div>
 
     <footer>
       <p>

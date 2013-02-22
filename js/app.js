@@ -5,6 +5,12 @@
     'appSecret': '2128bcc817fd4ce0acb9da7d9c398c00'
   });
 
+  $("#addRestaurantModal").modal({show: false});
+  $("#addRestaurant").click(function (event) {
+      var idString = "#" + event.target.id + "Modal";
+      $(idString).modal("show");
+  })
+
   var Restaurant = {};
   require(["js/entities/Restaurant"], function(_Restaurant){
     Restaurant = _Restaurant;
