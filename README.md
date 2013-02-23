@@ -21,4 +21,7 @@ My wife and I enjoy going out to eat; often.  We love trying new restaurants and
 * Social Integration
 	* Create login via Twitter/FB
 	* Add ability to share restaurant visits 
+* Validations
+	* Client Side
+	* Server Side
 

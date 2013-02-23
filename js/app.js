@@ -31,6 +31,7 @@
     restaurant.save({
       success: function (resaurant) {
         alert("Saved restaurant!");
+        $("#addRestaurantModal").modal("hide");
         form[0].reset();
       },
       error: function (error) {
@@ -47,11 +48,7 @@
   restaurants.fetch({
     success: function (listOfRestaurants) {
       $(listOfRestaurants).each(function(index, restaurant) {
-        var theRestaurant = restaurant.attr;
-        // var ul = "<ul>"
-        // ul += "<li>" + "attendees: " + theRestaurant.attendees + "</li></ul>";
-        // $("#visited-restaurants").append(ul);
-        $("#visited-restaurants").append(template(theRestaurant));
+        $("#visited-restaurants").append(template(restaurant.attr));
       });  
     },
     error: function (error) {
