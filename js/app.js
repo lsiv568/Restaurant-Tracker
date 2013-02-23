@@ -39,15 +39,19 @@
     });
   });
 
+  var source = $("#restaurant-data").html();
+  var template = Handlebars.compile(source);
+
   /** Load all data in Restaurant collection */
   var restaurants = new Kinvey.Collection("restaurants");
   restaurants.fetch({
     success: function (listOfRestaurants) {
       $(listOfRestaurants).each(function(index, restaurant) {
         var theRestaurant = restaurant.attr;
-        var ul = "<ul>"
-        ul += "<li>" + "attendees: " + theRestaurant.attendees + "</li></ul>";
-        $("#visited-restaurants").append(ul);
+        // var ul = "<ul>"
+        // ul += "<li>" + "attendees: " + theRestaurant.attendees + "</li></ul>";
+        // $("#visited-restaurants").append(ul);
+        $("#visited-restaurants").append(template(theRestaurant));
       });  
     },
     error: function (error) {
