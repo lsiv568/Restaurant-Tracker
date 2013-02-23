@@ -7,6 +7,7 @@ My wife and I enjoy going out to eat; often.  We love trying new restaurants and
 
 ### Technical Itch
 1. Play around with Kinvey BaaS
+2. Play around with Handlebars.js
 
 
 ## To Do:
@@ -14,7 +15,7 @@ My wife and I enjoy going out to eat; often.  We love trying new restaurants and
 	* Two column layout - visited / desired
 * Separation: Create clean separation of JS code.  
 	* Potential "widgets"
-	* Investigate Templating
+	* Integrate with Handlebars
 * Add ability to create a desired restaurant
 	* Display desired restaurants
 * Social Integration
