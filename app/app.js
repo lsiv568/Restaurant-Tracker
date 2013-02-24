@@ -12,49 +12,10 @@
       $(idString).modal("show");
   })
 
-  /** Loads Restaurant.js entity via require and stores it in Restaurant */
-  var Restaurant = {};
-  require(["js/entities/Restaurant"], function(_Restaurant){
-    Restaurant = _Restaurant;
-  });
-
-  /*** Handles form submission */
-  $("#new-restaurant-form").submit(function (event) {
-    event.preventDefault();
-    var form = $(this);
-    var details = form.serializeArray();
-    var argument = {};
-    var restaurant = new Restaurant(argument);
-    $(details).each(function() {
-      argument[this.name] = this.value;
-    });
-    restaurant.save({
-      success: function (resaurant) {
-        alert("Saved restaurant!");
-        $("#addRestaurantModal").modal("hide");
-        form[0].reset();
-      },
-      error: function (error) {
-        alert("Unable to save restaurt due to " + error.error + " " + error.description);
-      }
-    });
-  });
-
-  // var source = $("#restaurant-data").html();
-  // var template = Handlebars.compile(source);
-  var template = Handlebars.templates["restaurant"];
-
-  /** Load all data in Restaurant collection */
-  var restaurants = new Kinvey.Collection("restaurants");
-  restaurants.fetch({
-    success: function (listOfRestaurants) {
-      $(listOfRestaurants).each(function(index, restaurant) {
-        $("#visited-restaurants").append(template(restaurant.attr));
-      });  
-    },
-    error: function (error) {
-      alert("Unable to retrieve restaurants due to " + error.error + " " + error.description);
-    }
+  /** Load necessary JS views */
+  require(["app/views/restaurants/new",
+    "app/views/restaurants/index"], 
+    function(_Restaurant){
   });
 
 }(window, window.Kinvey));
