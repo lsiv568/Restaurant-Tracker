@@ -40,8 +40,9 @@
     });
   });
 
-  var source = $("#restaurant-data").html();
-  var template = Handlebars.compile(source);
+  // var source = $("#restaurant-data").html();
+  // var template = Handlebars.compile(source);
+  var template = Handlebars.templates["restaurant"];
 
   /** Load all data in Restaurant collection */
   var restaurants = new Kinvey.Collection("restaurants");
