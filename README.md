@@ -12,12 +12,13 @@ My wife and I enjoy going out to eat; often.  We love trying new restaurants and
 
 ## To Do:
 * Styling: need to create stylesheets and layout of app
-	* Two column layout - visited / desired
+	* ~~Two column layout - visited / desired~~
+	* Overall LaF
 * Separation: Create clean separation of JS code.  
-	* Potential "widgets"
-	* Integrate with Handlebars
+	* ~~Integrate with Handlebars~~
+	* ~Define file/directory structure~
 * Add ability to create a desired restaurant
-	* Display desired restaurants
+	* ~~Display desired restaurants~~
 * Social Integration
 	* Create login via Twitter/FB
 	* Add ability to share restaurant visits 
