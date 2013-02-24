@@ -16,7 +16,7 @@ My wife and I enjoy going out to eat; often.  We love trying new restaurants and
 	* Overall LaF
 * Separation: Create clean separation of JS code.  
 	* ~~Integrate with Handlebars~~
-	* ~Define file/directory structure~
+	* ~~Define file/directory structure~~
 * Add ability to create a desired restaurant
 	* ~~Display desired restaurants~~
 * Social Integration
