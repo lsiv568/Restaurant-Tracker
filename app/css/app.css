@@ -2,6 +2,10 @@ html, body {
     height: 100%; 
 }
 
+.center {
+	text-align: center;
+}
+
 .restaurant-entry {
 	border: 1px solid;
 }

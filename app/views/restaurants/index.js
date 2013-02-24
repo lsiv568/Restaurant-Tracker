@@ -6,7 +6,11 @@ define([], function () {
   restaurants.fetch({
     success: function (listOfRestaurants) {
       $(listOfRestaurants).each(function(index, restaurant) {
-        $("#visited-restaurants").append(template(restaurant.attr));
+        if (restaurant.attr.visited) {
+          $("#visited-restaurants").append(template(restaurant.attr));  
+        } else {
+          $("#desired-restaurants").append(template(restaurant.attr));
+        }
       });  
     },
     error: function (error) {

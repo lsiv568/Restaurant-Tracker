@@ -6,6 +6,7 @@ define(["app/entities/Restaurant"],
     event.preventDefault();
     var form = $(this);
     var details = form.serializeArray();
+    debugger;
     var argument = {};
     var restaurant = new Restaurant(argument);
     $(details).each(function() {

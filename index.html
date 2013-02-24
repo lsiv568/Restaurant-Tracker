@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Louis W. Sivillo</title>
+    <title>Restaurant Tracker</title>
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="app/css/app.css" rel="stylesheet">
   </head>
-  <body>
-    
-    
+  <body>  
 
     <div class="container-fluid">
+
+      <div class="span12">
+        <div class="hero-unit center">
+          <h1>Restaurants</h1>
+        </div>
+      </div>
 
       <div class="span2">
         <div class="well sidebar-nav">
@@ -50,6 +54,7 @@
               <input type="text" name="rating" placeholder="1-5">
               <label>Special Notes</label>
               <textarea name="notes" placeholder="Enter special notes here"></textarea>
+              <label>Visited <input type="checkbox" name="visited"></label>
               <div>
                 <button type="submit" class="btn">Add</button>
               <div>
