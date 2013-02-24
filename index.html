@@ -5,17 +5,28 @@
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="app/css/app.css" rel="stylesheet">
   </head>
   <body>
     
-    <div>
-      <button id="addRestaurant" type="button">Add New Restaurant</button>
-    <div>
+    
 
-    <div>
-      <h3>Visited Restaurants</h3>
-      <div id="visited-restaurants">
+    <div class="container-fluid">
 
+      <div class="span2">
+        <div class="well sidebar-nav">
+          <ul>
+            <li class="active"><a id="addRestaurant" href="#">New Restaurant</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="span5">
+        <h3>Visited Restaurants</h3>
+        <div id="visited-restaurants"></div>
+      </div>
+      <div class="span5">
+        <h3>Desired Restaurants</h3>
+        <div id="desired-restaurants"></div>
       </div>
     </div>
 
