@@ -15,7 +15,7 @@
   /** Load necessary JS views */
   require(["app/views/restaurants/new",
     "app/views/restaurants/index"], 
-    function(_Restaurant){
+    function(){
   });
 
 }(window, window.Kinvey));

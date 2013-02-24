@@ -6,7 +6,6 @@ define(["app/entities/Restaurant"],
     event.preventDefault();
     var form = $(this);
     var details = form.serializeArray();
-    debugger;
     var argument = {};
     var restaurant = new Restaurant(argument);
     $(details).each(function() {
@@ -16,6 +15,14 @@ define(["app/entities/Restaurant"],
       success: function (resaurant) {
         alert("Saved restaurant!");
         $("#addRestaurantModal").modal("hide");
+
+        // load the restaurant template
+        var template = Handlebars.templates["restaurant"];
+        if (restaurant.attr.visited) {
+          $("#visited-restaurants").append(template(restaurant.attr));  
+        } else {
+          $("#desired-restaurants").append(template(restaurant.attr));
+        }
         form[0].reset();
       },
       error: function (error) {
