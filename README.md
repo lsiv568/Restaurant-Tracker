@@ -25,4 +25,7 @@ My wife and I enjoy going out to eat; often.  We love trying new restaurants and
 * Validations
 	* Client Side
 	* Server Side
+* Add datepicker 
+* Add ability to convert desired restaurant to visited one
+	* Make it possible to fill in blank fields
 
