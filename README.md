@@ -26,6 +26,11 @@ My wife and I enjoy going out to eat; often.  We love trying new restaurants and
 	* Client Side
 	* Server Side
 * Add datepicker 
-* Add ability to convert desired restaurant to visited one
-	* Make it possible to fill in blank fields
+* ~~Add ability to convert desired restaurant to visited one~~
+	* ~~Make it possible to fill in blank fields~~
+* Add ability to edit visited restaurants
+
+
+* Once happy with functionality - Investigate converting to EmberJS or Backbone
+* Consider swapping out Kinvey with custom rails backend
 
