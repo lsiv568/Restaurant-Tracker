@@ -1,4 +1,7 @@
 <div class="restaurant-entry">
+  {{#unless visited}}
+    <button class="visit-restaurant" id="{{_id}}">Visit</button>
+  {{/unless}}
   <div>
     <span><strong>Name</strong>:</span>
     <span>{{name}}</span>

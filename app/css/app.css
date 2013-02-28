@@ -9,3 +9,7 @@ html, body {
 .restaurant-entry {
 	border: 1px solid;
 }
+
+.visit-restaurant {
+	float: right;
+}

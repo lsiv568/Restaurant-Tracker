@@ -1,4 +1,5 @@
-define([], function () {
+define(["app/entities/Restaurant", "app/RestaurantHelper"], 
+  function (Restaurant, RestaurantHelper) {
 	
   // load the restaurant template
   var template = Handlebars.templates["restaurant"];
@@ -16,11 +17,12 @@ define([], function () {
         } else {
           $("#desired-restaurants").append(template(restaurant.attr));
         }
-      });  
+      });
+      RestaurantHelper.attachVisitListener();
     },
     error: function (error) {
       alert("Unable to retrieve restaurants due to " + error.error + " " + error.description);
     }
-  });
+  });  
 
 });
