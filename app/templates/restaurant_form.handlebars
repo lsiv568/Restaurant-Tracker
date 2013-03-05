@@ -1,31 +1,31 @@
 <fieldset {{#if _id}} class="visiting" {{/if}}>
   <label>Restaurant Name</label>
   {{#if name}}
-    <input type="text" name="name" value={{name}}>
+    <input type="text" name="name" value="{{name}}">
   {{else}}
     <input type="text" name="name" placeholder="Savinos">
   {{/if}}
   <label>Date Visited</label>
   {{#if date}}
-    <input type="text" name="date" value={{date}}>
+    <input type="text" name="date" value="{{date}}">
   {{else}}
     <input type="text" name="date" placeholder="February 14, 2013">
   {{/if}}
   <label>Attendees</label>
   {{#if attendees}}
-    <input type="text" name="attendees" value={{attendees}}>
+    <input type="text" name="attendees" value="{{attendees}}">
   {{else}}
     <input type="text" name="attendees" placeholder="Louis, Patience">
   {{/if}}
   <label>Location</label>
   {{#if location}}
-    <input type="text" name="location" value={{location}}>
+    <input type="text" name="location" value="{{location}}">
   {{else}}
     <input type="text" name="location" placeholder="Boston - Atlanic Wharf">
   {{/if}}
   <label>Rating</label>
   {{#if rating}}
-    <input type="text" name="rating" value={{rating}}>
+    <input type="text" name="rating" value="{{rating}}">
   {{else}}
     <input type="text" name="rating" placeholder="1-5">
   {{/if}}

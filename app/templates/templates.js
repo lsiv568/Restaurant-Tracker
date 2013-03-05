@@ -60,11 +60,11 @@ function program1(depth0,data) {
 function program3(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\n    <input type=\"text\" name=\"name\" value=";
+  buffer += "\n    <input type=\"text\" name=\"name\" value=\"";
   if (stack1 = helpers.name) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.name; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + ">\n  ";
+    + "\">\n  ";
   return buffer;
   }
 
@@ -77,11 +77,11 @@ function program5(depth0,data) {
 function program7(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\n    <input type=\"text\" name=\"date\" value=";
+  buffer += "\n    <input type=\"text\" name=\"date\" value=\"";
   if (stack1 = helpers.date) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.date; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + ">\n  ";
+    + "\">\n  ";
   return buffer;
   }
 
@@ -94,11 +94,11 @@ function program9(depth0,data) {
 function program11(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\n    <input type=\"text\" name=\"attendees\" value=";
+  buffer += "\n    <input type=\"text\" name=\"attendees\" value=\"";
   if (stack1 = helpers.attendees) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.attendees; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + ">\n  ";
+    + "\">\n  ";
   return buffer;
   }
 
@@ -111,11 +111,11 @@ function program13(depth0,data) {
 function program15(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\n    <input type=\"text\" name=\"location\" value=";
+  buffer += "\n    <input type=\"text\" name=\"location\" value=\"";
   if (stack1 = helpers.location) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.location; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + ">\n  ";
+    + "\">\n  ";
   return buffer;
   }
 
@@ -128,11 +128,11 @@ function program17(depth0,data) {
 function program19(depth0,data) {
   
   var buffer = "", stack1;
-  buffer += "\n    <input type=\"text\" name=\"rating\" value=";
+  buffer += "\n    <input type=\"text\" name=\"rating\" value=\"";
   if (stack1 = helpers.rating) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.rating; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + ">\n  ";
+    + "\">\n  ";
   return buffer;
   }
 
